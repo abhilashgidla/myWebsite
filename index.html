@@ -45,6 +45,12 @@ html,body {
 	width: 100%"
 }
 
+input[type=text],input[type=submit],select {
+	padding: 5px;
+	width: 200px;
+	font: 1em;
+}
+
 p {
 	font-size: 20px;
 	padding: 5px;
@@ -89,19 +95,41 @@ p {
 		Portfolio:</span>
 		<p>my portfolio</p>
 	</div>
-	<div class="myclass styling" styling>
-		<span class="heading">Contact me:</span>
+	<div class="myclass styling" style="font-size: 0.9em;height:auto;">
+		<span class="heading">Contact me:</span><br /> <b>send me a
+			message</b>
+		<form action="  " method="post">
+			<input type="text" id=" name" value="pls enter your name" /><br />
+			<br>
+			<textarea rows="10" cols="50">pls type a msg here</textarea>
+			<br />
+			<b>you are:</b><br /> <input type="radio" id="male" checked
+				name="gender">male<br /> <input type="radio" id="female"
+				name="gender">female <br /> <input type="radio" id="others"
+				name="gender">other<br /> <b>Interested in:</b><br /> <input
+				type="checkbox" id="webdesign" checked>webdesign <br /> <input
+				type="checkbox" id="web development">web development <br />
+			<input type="checkbox" id="mobile">mobile<br /> <select
+				id="ddabout"<option></option>
+				<option>choose your option</option>
+				<option>student</option>
+				<option>professional</option>
+				<option>company</option>
+			</select><br /> <input type="submit" id="submit" />
+		</form>
 		<p>
 			<i>Email id:</i> <b>Abhilash.g43@gmail.com</b><br /> <i>Phone
 				No:</i>: <b>9966666442</b>
 		</p>
-		<a href="https://www.facebook.com/abhilash.gidla"> <img
-			src="images\fb.png" /></a><a
-			href="https://secure.skype.com/portal/profile"><img
-			src="images\skype.png" /></a> <a
-			href="http://www.linkedin.com/profile/view?id=289761884&trk=nav_responsive_tab_profile"><img
-			src="images\ln.png" /></a><a href="https://twitter.com/zindaabhi"><img
-			src="images\twitter.png" /></a>
+		<div style="float: right">
+			<a href="https://www.facebook.com/abhilash.gidla"> <img
+				src="images\fb.png" /></a><a
+				href="https://secure.skype.com/portal/profile"><img
+				src="images\skype.png" /></a> <a
+				href="http://www.linkedin.com/profile/view?id=289761884&trk=nav_responsive_tab_profile"><img
+				src="images\ln.png" /></a><a href="https://twitter.com/zindaabhi"><img
+				src="images\twitter.png" /></a>
+		</div>
 </body>
 
 
