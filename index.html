@@ -1,67 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Abhilash Gidla</title>
 <script src="js/jquery.js"></script>
-<script type="text/javascript">
+<script src="js/general.js"></script>
 
-function car(color,regno,company)
-{
-	this.color=color;
-	this.regno=regno;
-	this.company=company;
-	this.cardetails=function()
-	{
-		return this.color+"and"+this.regno+"and"+this.company;
-		
-	}
-	this.getcompany=function()
-	{
-		return this.color+"and---"+this.company;
-	
-	}
-
-}	
-	var c1=new car("red",123,"honda");
-	console.log(c1.cardetails());	
-	console.log(c1.getcompany());
-	
-function company(name,noofemployee,avgsalary,location)
-{
-	this.name=name;
-	this.noofemployee=noofemployee;
-	this.avgsalary=avgsalary;
-	this.location=location;
-	this.companydetails=function()
-	{
-		return this.name+","+this.noofemployee+","+this.avgsalary+","+this.location;
-		
-	}
-	this.getcompany=function()
-	{
-		return this.name+","+this.noofemployee+","+this.avgsalary+","+this.location;
-		
-	}
-	this.getlocation=function()
-	{
-		return this.name+"company is loacted at"+this.location;
-	}
-	
-}   var c=new company("windows","200000","15000","bangalore")
-	console.log(c.getcompany());
-	console.log(c.getlocation());
-	
-	 var c1=new company("cisco","200000","15000","chennai")
-		console.log(c1.getcompany());
-		console.log(c1.getlocation());
-		
-		 var c2=new company("msft","200000","15000","hyderabad")
-			console.log(c2.getcompany());
-			console.log(c2.getlocation());
-	
-	
-	
-	
-</script
 <title>Abhilash Gidla</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu'
 	rel='stylesheet' type='text/css'>
@@ -71,10 +14,10 @@ function company(name,noofemployee,avgsalary,location)
 <body>
 
 
-	<div class="myclass"
-		style="width: 100%; background-color: white; border-top: solid 10px #cc0000; height: 350px;">
+	<div class="myclass" 
+			style="width: 100%; background-color: white; border-top: solid 10px #cc0000; height: 250px;">
 
-		<div
+	<div
 			style="float: left; width: 30%; margin-left: 15%; text-align: right">
 			<img class="myProfilePic"
 				src="http://m.ak.fbcdn.net/profile.ak/hprofile-ak-prn2/187432_100000339914287_999383043_n.jpg" />
@@ -83,23 +26,24 @@ function company(name,noofemployee,avgsalary,location)
 			style="float: left; width: 25%; text-align: left; margin-left: 15px; font-size: 60px">ABHILASH
 			GIDLA</div>
 	</div>
+	
+	<div class="heading" id="aboutMeTab">[+] About me:</div>
 
-	<div class="myclass styling">
-
-		<span class="heading">About me:</span>
-		<div class="aboutMe">"I m abhilash. I'm a student doing my
+	<div class="rectangle" id="aboutme">	
+		"I m abhilash. I'm a student doing my
 			graduation in S.R.K.R ENG COLLEGE,BHIMAVARAM. I m a executive body
 			member of ACE (Assosiation of Computer Science & Engineering).I'm
 			good in communication skills and i m a good learner.I have learnt
-			c,c++,java,html."</div>
+			c,c++,java,html."
 	</div>
-
-	<div class="myclass styling" style="background-color: white;"heading">
-		Portfolio:</span>
+	<div class="heading" id="portTab">[+] portfolio:</div>
+	<div class="rectangle" id="portfolio">
+		</span>
 		<p>my portfolio</p>
 	</div>
-	<div class="myclass styling" style="font-size: 0.9em; height: auto;">
-		<span class="heading">Contact me:</span><br /> <b>send me a
+<div class="heading" id="contactTab">[+] Contact me:</div>	
+	<div class="rectangle " id="contactme" style="font-size: 0.9em; height: auto;">
+		<span class="heading"></span><br /> <b>send me a
 			message</b>
 		<form action="  " method="post">
 			<input type="text" id=" name" value="pls enter your name" /><br />
@@ -117,21 +61,32 @@ function company(name,noofemployee,avgsalary,location)
 				<option>student</option>
 				<option>professional</option>
 				<option>company</option>
-			</select><br /> <input type="submit" id="submit" />
-		</form>
+			</select><br /> <input type="button" value="sendmail" id="sendmail" />
+			<input type="button" value="show" id="show" />
+			<input type="button" value="hide" id="hide" />
+			<input type="button" value="background" id="background" />
+ 		</form>
 		<p>
 			<i>Email id:</i> <b>Abhilash.g43@gmail.com</b><br /> <i>Phone
 				No:</i>: <b>9966666442</b>
-		</p>
-		<div style="float: right">
-			<a href="https://www.facebook.com/abhilash.gidla"> <img
-				src="images\fb.png" /></a><a
-				href="https://secure.skype.com/portal/profile"><img
-				src="images\skype.png" /></a> <a
-				href="http://www.linkedin.com/profile/view?id=289761884&trk=nav_responsive_tab_profile"><img
-				src="images\ln.png" /></a><a href="https://twitter.com/zindaabhi"><img
-				src="images\twitter.png" /></a>
+		
+		</p>>
 		</div>
+		<p style="text-align: center;">
+		<centre>
+		
+			<a href="https://www.facebook.com/abhilash.gidla"> <img
+				src="images\facebook.png" /></a>
+			<a
+				href="https://secure.skype.com/portal/profile"><img
+				src="images\skype_.png" /></a> 
+			<a
+				href="http://www.linkedin.com/profile/view?id=289761884&trk=nav_responsive_tab_profile"><img
+				src="images\linkedin.png" /></a>
+			<a href="https://twitter.com/zindaabhi"><img
+				src="images\twitter_.png" /></a>
+		</centre>
+</p>		
 </body>
 
 
