@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+
+function car(color,regno,company)
+{
+	this.color=color;
+	this.regno=regno;
+	this.company=company;
+	this.cardetails=function()
+	{
+		return this.color+"and"+this.regno+"and"+this.company;
+		
+	}
+	this.getcompany=function()
+	{
+		return this.color+"and---"+this.company;
+	
+	}
+
+}	
+	var c1=new car("red",123,"honda");
+	console.log(c1.cardetails());	
+	console.log(c1.getcompany());
+	
+function company(name,noofemployee,avgsalary,location)
+{
+	this.name=name;
+	this.noofemployee=noofemployee;
+	this.avgsalary=avgsalary;
+	this.location=location;
+	this.companydetails=function()
+	{
+		return this.name+","+this.noofemployee+","+this.avgsalary+","+this.location;
+		
+	}
+	this.getcompany=function()
+	{
+		return this.name+","+this.noofemployee+","+this.avgsalary+","+this.location;
+		
+	}
+	this.getlocation=function()
+	{
+		return this.name+"company is loacted at"+this.location;
+	}
+	
+}   var c=new company("windows","200000","15000","bangalore")
+	console.log(c.getcompany());
+	console.log(c.getlocation());
+	
+	 var c1=new company("cisco","200000","15000","chennai")
+		console.log(c1.getcompany());
+		console.log(c1.getlocation());
+		
+		 var c2=new company("msft","200000","15000","hyderabad")
+			console.log(c2.getcompany());
+			console.log(c2.getlocation());
+	
+	
+	
+	
+</script
 <title>Abhilash Gidla</title>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu'
 	rel='stylesheet' type='text/css'>
-<style type="text/css">
-html,body {
-	padding: 0;
-	margin: 0;
-	font-family: 'Ubuntu', sans-serif;
-}
-
-.pagediv {
-	padding: 5px;
-	font-size: 20%;
-	border-bottom: 1px solid #bobobo;
-}
-
-.myclass {
-	padding: 5px;
-	font-size: 1.5em;
-	min-height: 200px;
-	border-top: solid 2px #cc0000;
-}
-
-.myProfilePic {
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	-border-radius: 999px;
-	-moz-border-radius: 999px;
-}
-
-.heading {
-	font-size: 20px;
-	/*text-decoration: underline;*/
-	padding-bottom: 5px;
-	font-weight: bolder;
-	/* i am comment */
-}
-
-.styling {
-	font-size: 30px;
-	background-color: rgba(240, 0, 0, 0.3);
-	width: 100%"
-}
-
-input[type=text],input[type=submit],select {
-	padding: 5px;
-	width: 200px;
-	font: 1em;
-}
-
-p {
-	font-size: 20px;
-	padding: 5px;
-}
-
-.aboutMe {
-	border-left: solid 4px white;
-	padding: 5px;
-	margin-left: 10%;
-	font-size: 0.6em;
-}
-</style>
+<link href="style/style.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -95,15 +98,14 @@ p {
 		Portfolio:</span>
 		<p>my portfolio</p>
 	</div>
-	<div class="myclass styling" style="font-size: 0.9em;height:auto;">
+	<div class="myclass styling" style="font-size: 0.9em; height: auto;">
 		<span class="heading">Contact me:</span><br /> <b>send me a
 			message</b>
 		<form action="  " method="post">
 			<input type="text" id=" name" value="pls enter your name" /><br />
 			<br>
 			<textarea rows="10" cols="50">pls type a msg here</textarea>
-			<br />
-			<b>you are:</b><br /> <input type="radio" id="male" checked
+			<br /> <b>you are:</b><br /> <input type="radio" id="male" checked
 				name="gender">male<br /> <input type="radio" id="female"
 				name="gender">female <br /> <input type="radio" id="others"
 				name="gender">other<br /> <b>Interested in:</b><br /> <input
