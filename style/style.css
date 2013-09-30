@@ -1,0 +1,64 @@
+html,body{
+	padding:0;
+	margin:0;
+	font-family:arial;
+}
+.heading{
+	background:#000000;
+	color:white;
+	font-size:1.3em;
+	font-family:arial;
+}
+.todoList{
+	background:#f1f1f1;
+	padding:15px;
+	width:60%;
+	border:solid 1px #c0c0c0;
+	margin-top:5px;
+	margin-left:5px;
+}
+.items{
+	margin-left:5px;
+	margin-top:10px;
+	border-top:solid 5px #e1dad3;
+	width:50%;
+	padding:5px;
+	background-color:#4d90fe;
+}
+input{
+	padding:5px;
+	font-size:1.2em;
+}
+.singleItem
+{	
+	padding:8px;
+	border-bottom:solid 1px black;
+}
+.delete
+{
+	float:right;
+}
+
+
+.portfolioSub
+{
+	background:#e1dad3;
+	padding:5px;
+	width:100%;
+	
+}
+
+.appstr
+{
+	margin-left:1%;
+	padding:3px;
+	background-color:#ebebeb;
+	width:100px;
+	
+}
+
+.appstr a
+{
+	color:black;
+	text-decoration:none;
+}

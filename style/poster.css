@@ -1,0 +1,47 @@
+html {
+       padding: 0;
+       margin: 0;
+}
+#movieYour {
+       background-color: #ededed;
+       height: 60%;
+       width: 60%;
+}
+
+#name {
+       width: 20%;
+       height:10%;
+       background-color: #ededed
+       border: solid 1px white;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       border-radius: 5px;
+}
+
+#searchPoster {
+       width: 30%;
+       height: 10%;
+       border: solid 1px white;
+       -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+       border-radius: 9px;
+}
+#movie {
+       -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+       border-radius: 9px;
+       width: 80%;
+       height: 80%;
+       color:#FA5858;
+       font-size: 1.3em;
+}
+
+#movieYour {
+       -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+       border-radius: 9px;
+       width: 80%;
+       height: 80%;
+       color:#000000;
+       font-size: 1.3em;
+}
